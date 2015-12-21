@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700B4A53163EA18F009AA525 /* AJBScrabbleSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B4A52163EA18F009AA525 /* AJBScrabbleSolverViewController.m */; };
+		700B4A57163EC756009AA525 /* AJBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B4A56163EC756009AA525 /* AJBHomeViewController.m */; };
+		700B4A65163ED0A4009AA525 /* AJBBoggleSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B4A64163ED0A4009AA525 /* AJBBoggleSolverViewController.m */; };
+		700B4A68163ED0C7009AA525 /* AJBPuzzleSolversViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B4A67163ED0C7009AA525 /* AJBPuzzleSolversViewController.m */; };
+		700B4A6F163F497D009AA525 /* AJBCustomDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700B4A6E163F497C009AA525 /* AJBCustomDictionaryViewController.m */; };
+		701E04BF164AA99B003EA1DE /* Wordlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 701E04BE164AA99B003EA1DE /* Wordlist.txt */; };
+		7025D397164F6AB500DAD2F0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7025D396164F6AB500DAD2F0 /* AudioToolbox.framework */; };
+		7030E28A165540760095904B /* bigRedCellImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E27F165540760095904B /* bigRedCellImage.png */; };
+		7030E28B165540760095904B /* brightWoodenPlankImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E280165540760095904B /* brightWoodenPlankImage.png */; };
+		7030E28C165540760095904B /* circularPuzzleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E281165540760095904B /* circularPuzzleImage.png */; };
+		7030E28D165540760095904B /* darkWoodenPlankImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E282165540760095904B /* darkWoodenPlankImage.png */; };
+		7030E28E165540760095904B /* plainPaperBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E283165540760095904B /* plainPaperBackgroundImage.png */; };
+		7030E28F165540760095904B /* puzzleBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E284165540760095904B /* puzzleBackgroundImage.png */; };
+		7030E290165540760095904B /* puzzlePiecesBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E285165540760095904B /* puzzlePiecesBackgroundImage.png */; };
+		7030E291165540760095904B /* puzzlePiecesBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E286165540760095904B /* puzzlePiecesBackgroundImage@2x.png */; };
+		7030E292165540760095904B /* sunBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E287165540760095904B /* sunBackgroundImage.png */; };
+		7030E293165540760095904B /* sunBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E288165540760095904B /* sunBackgroundImage@2x.png */; };
+		7030E294165540760095904B /* wideBrightWoodButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E289165540760095904B /* wideBrightWoodButtonImage.png */; };
+		7030E298165540EA0095904B /* glossyRedButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E296165540EA0095904B /* glossyRedButtonImage.png */; };
+		7030E299165540EA0095904B /* woodenPlanksBackgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7030E297165540EA0095904B /* woodenPlanksBackgroundImage.jpg */; };
+		7030E29B165541540095904B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7030E29A165541540095904B /* Default-568h@2x.png */; };
+		7030E29D165541980095904B /* everybodyWalkTheDinosaur.aif in Resources */ = {isa = PBXBuildFile; fileRef = 7030E29C165541980095904B /* everybodyWalkTheDinosaur.aif */; };
+		7068F6FF164915950051F0F6 /* AJBCustomDictionaryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7068F6FE164915950051F0F6 /* AJBCustomDictionaryDetailViewController.m */; };
+		708E15CF16553981004B8903 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 708E15D116553981004B8903 /* Default@2x.png */; };
+		70973F3416469A4700571D10 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70973F3316469A4600571D10 /* CoreData.framework */; };
+		70973F7C16476D8C00571D10 /* PuzzleSolverApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70973F7A16476D8B00571D10 /* PuzzleSolverApp.xcdatamodeld */; };
+		70AA605C16462B7500B4746B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AA605B16462B7500B4746B /* QuartzCore.framework */; };
+		70BCB30E16363A2900A9DFB0 /* AJBCrosswordSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BCB30D16363A2900A9DFB0 /* AJBCrosswordSolverViewController.m */; };
+		70BCB3121637B55700A9DFB0 /* AJBHangmanSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BCB3111637B55700A9DFB0 /* AJBHangmanSolverViewController.m */; };
+		70CEA331164FCA75001EFDB3 /* AJBPuzzleHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70CEA330164FCA75001EFDB3 /* AJBPuzzleHelpViewController.m */; };
+		70D880C1162B901100A19EBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D880C0162B901100A19EBD /* UIKit.framework */; };
+		70D880C3162B901100A19EBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D880C2162B901100A19EBD /* Foundation.framework */; };
+		70D880C5162B901100A19EBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D880C4162B901100A19EBD /* CoreGraphics.framework */; };
+		70D880CB162B901100A19EBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D880C9162B901100A19EBD /* InfoPlist.strings */; };
+		70D880CD162B901100A19EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880CC162B901100A19EBD /* main.m */; };
+		70D880D1162B901100A19EBD /* AJBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880D0162B901100A19EBD /* AJBAppDelegate.m */; };
+		70D880D4162B901100A19EBD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D880D2162B901100A19EBD /* MainStoryboard.storyboard */; };
+		70D880EB162E551200A19EBD /* AJBAnagramSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880EA162E551200A19EBD /* AJBAnagramSolverViewController.m */; };
+		70D880EF162E589900A19EBD /* AJBSolutionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880EE162E589900A19EBD /* AJBSolutionsViewController.m */; };
+		70D88107162E5A4F00A19EBD /* AJBAnagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880F9162E5A4F00A19EBD /* AJBAnagram.m */; };
+		70D88108162E5A4F00A19EBD /* AJBBoggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880FB162E5A4F00A19EBD /* AJBBoggle.m */; };
+		70D88109162E5A4F00A19EBD /* AJBCrossword.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880FD162E5A4F00A19EBD /* AJBCrossword.m */; };
+		70D8810A162E5A4F00A19EBD /* AJBDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D880FF162E5A4F00A19EBD /* AJBDictionary.m */; };
+		70D8810B162E5A4F00A19EBD /* AJBHangman.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D88101162E5A4F00A19EBD /* AJBHangman.m */; };
+		70D8810C162E5A4F00A19EBD /* AJBScrabble.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D88103162E5A4F00A19EBD /* AJBScrabble.m */; };
+		70D8810D162E5A4F00A19EBD /* AJBWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D88105162E5A4F00A19EBD /* AJBWord.m */; };
+		70D92499165555A20044B7DB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D92498165555A20044B7DB /* icon.png */; };
+		70D9249B165555A90044B7DB /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D9249A165555A90044B7DB /* icon@2x.png */; };
+		70E76A54164894E9009A36B9 /* AJBDiskStoredWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E76A53164894E9009A36B9 /* AJBDiskStoredWord.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		700B4A51163EA18F009AA525 /* AJBScrabbleSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBScrabbleSolverViewController.h; sourceTree = "<group>"; };
+		700B4A52163EA18F009AA525 /* AJBScrabbleSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBScrabbleSolverViewController.m; sourceTree = "<group>"; };
+		700B4A55163EC755009AA525 /* AJBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBHomeViewController.h; sourceTree = "<group>"; };
+		700B4A56163EC756009AA525 /* AJBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBHomeViewController.m; sourceTree = "<group>"; };
+		700B4A63163ED0A4009AA525 /* AJBBoggleSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBBoggleSolverViewController.h; sourceTree = "<group>"; };
+		700B4A64163ED0A4009AA525 /* AJBBoggleSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBBoggleSolverViewController.m; sourceTree = "<group>"; };
+		700B4A66163ED0C7009AA525 /* AJBPuzzleSolversViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBPuzzleSolversViewController.h; sourceTree = "<group>"; };
+		700B4A67163ED0C7009AA525 /* AJBPuzzleSolversViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBPuzzleSolversViewController.m; sourceTree = "<group>"; };
+		700B4A6D163F497B009AA525 /* AJBCustomDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCustomDictionaryViewController.h; sourceTree = "<group>"; };
+		700B4A6E163F497C009AA525 /* AJBCustomDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCustomDictionaryViewController.m; sourceTree = "<group>"; };
+		701E04BE164AA99B003EA1DE /* Wordlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wordlist.txt; sourceTree = "<group>"; };
+		7025D396164F6AB500DAD2F0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7030E27F165540760095904B /* bigRedCellImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigRedCellImage.png; sourceTree = "<group>"; };
+		7030E280165540760095904B /* brightWoodenPlankImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brightWoodenPlankImage.png; sourceTree = "<group>"; };
+		7030E281165540760095904B /* circularPuzzleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circularPuzzleImage.png; sourceTree = "<group>"; };
+		7030E282165540760095904B /* darkWoodenPlankImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkWoodenPlankImage.png; sourceTree = "<group>"; };
+		7030E283165540760095904B /* plainPaperBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plainPaperBackgroundImage.png; sourceTree = "<group>"; };
+		7030E284165540760095904B /* puzzleBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puzzleBackgroundImage.png; sourceTree = "<group>"; };
+		7030E285165540760095904B /* puzzlePiecesBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puzzlePiecesBackgroundImage.png; sourceTree = "<group>"; };
+		7030E286165540760095904B /* puzzlePiecesBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "puzzlePiecesBackgroundImage@2x.png"; sourceTree = "<group>"; };
+		7030E287165540760095904B /* sunBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunBackgroundImage.png; sourceTree = "<group>"; };
+		7030E288165540760095904B /* sunBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sunBackgroundImage@2x.png"; sourceTree = "<group>"; };
+		7030E289165540760095904B /* wideBrightWoodButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wideBrightWoodButtonImage.png; sourceTree = "<group>"; };
+		7030E296165540EA0095904B /* glossyRedButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glossyRedButtonImage.png; sourceTree = "<group>"; };
+		7030E297165540EA0095904B /* woodenPlanksBackgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodenPlanksBackgroundImage.jpg; sourceTree = "<group>"; };
+		7030E29A165541540095904B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		7030E29C165541980095904B /* everybodyWalkTheDinosaur.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = everybodyWalkTheDinosaur.aif; sourceTree = "<group>"; };
+		7068F6FD164915950051F0F6 /* AJBCustomDictionaryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCustomDictionaryDetailViewController.h; sourceTree = "<group>"; };
+		7068F6FE164915950051F0F6 /* AJBCustomDictionaryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCustomDictionaryDetailViewController.m; sourceTree = "<group>"; };
+		708E15D016553981004B8903 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Default@2x.png"; sourceTree = "<group>"; };
+		70973F3316469A4600571D10 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		70973F7B16476D8C00571D10 /* PuzzleSolverApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PuzzleSolverApp.xcdatamodel; sourceTree = "<group>"; };
+		70AA605B16462B7500B4746B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		70BCB30C16363A2900A9DFB0 /* AJBCrosswordSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCrosswordSolverViewController.h; sourceTree = "<group>"; };
+		70BCB30D16363A2900A9DFB0 /* AJBCrosswordSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCrosswordSolverViewController.m; sourceTree = "<group>"; };
+		70BCB3101637B55700A9DFB0 /* AJBHangmanSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBHangmanSolverViewController.h; sourceTree = "<group>"; };
+		70BCB3111637B55700A9DFB0 /* AJBHangmanSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBHangmanSolverViewController.m; sourceTree = "<group>"; };
+		70CEA32F164FCA75001EFDB3 /* AJBPuzzleHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBPuzzleHelpViewController.h; sourceTree = "<group>"; };
+		70CEA330164FCA75001EFDB3 /* AJBPuzzleHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBPuzzleHelpViewController.m; sourceTree = "<group>"; };
+		70D880BC162B901100A19EBD /* MPSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D880C0162B901100A19EBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70D880C2162B901100A19EBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70D880C4162B901100A19EBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		70D880C8162B901100A19EBD /* MPSolver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MPSolver-Info.plist"; sourceTree = "<group>"; };
+		70D880CA162B901100A19EBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D880CC162B901100A19EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70D880CE162B901100A19EBD /* MPSolver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPSolver-Prefix.pch"; sourceTree = "<group>"; };
+		70D880CF162B901100A19EBD /* AJBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJBAppDelegate.h; sourceTree = "<group>"; };
+		70D880D0162B901100A19EBD /* AJBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJBAppDelegate.m; sourceTree = "<group>"; };
+		70D880D3162B901100A19EBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		70D880E9162E551200A19EBD /* AJBAnagramSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBAnagramSolverViewController.h; sourceTree = "<group>"; };
+		70D880EA162E551200A19EBD /* AJBAnagramSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAnagramSolverViewController.m; sourceTree = "<group>"; };
+		70D880ED162E589900A19EBD /* AJBSolutionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBSolutionsViewController.h; sourceTree = "<group>"; };
+		70D880EE162E589900A19EBD /* AJBSolutionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBSolutionsViewController.m; sourceTree = "<group>"; };
+		70D880F8162E5A4F00A19EBD /* AJBAnagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBAnagram.h; sourceTree = "<group>"; };
+		70D880F9162E5A4F00A19EBD /* AJBAnagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAnagram.m; sourceTree = "<group>"; };
+		70D880FA162E5A4F00A19EBD /* AJBBoggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBBoggle.h; sourceTree = "<group>"; };
+		70D880FB162E5A4F00A19EBD /* AJBBoggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBBoggle.m; sourceTree = "<group>"; };
+		70D880FC162E5A4F00A19EBD /* AJBCrossword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCrossword.h; sourceTree = "<group>"; };
+		70D880FD162E5A4F00A19EBD /* AJBCrossword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCrossword.m; sourceTree = "<group>"; };
+		70D880FE162E5A4F00A19EBD /* AJBDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBDictionary.h; sourceTree = "<group>"; };
+		70D880FF162E5A4F00A19EBD /* AJBDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBDictionary.m; sourceTree = "<group>"; };
+		70D88100162E5A4F00A19EBD /* AJBHangman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBHangman.h; sourceTree = "<group>"; };
+		70D88101162E5A4F00A19EBD /* AJBHangman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBHangman.m; sourceTree = "<group>"; };
+		70D88102162E5A4F00A19EBD /* AJBScrabble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBScrabble.h; sourceTree = "<group>"; };
+		70D88103162E5A4F00A19EBD /* AJBScrabble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBScrabble.m; sourceTree = "<group>"; };
+		70D88104162E5A4F00A19EBD /* AJBWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBWord.h; sourceTree = "<group>"; };
+		70D88105162E5A4F00A19EBD /* AJBWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBWord.m; sourceTree = "<group>"; };
+		70D88106162E5A4F00A19EBD /* PuzzleSolvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleSolvers.h; sourceTree = "<group>"; };
+		70D92498165555A20044B7DB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		70D9249A165555A90044B7DB /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		70E76A52164894E9009A36B9 /* AJBDiskStoredWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBDiskStoredWord.h; sourceTree = "<group>"; };
+		70E76A53164894E9009A36B9 /* AJBDiskStoredWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBDiskStoredWord.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D880B9162B901100A19EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7025D397164F6AB500DAD2F0 /* AudioToolbox.framework in Frameworks */,
+				70973F3416469A4700571D10 /* CoreData.framework in Frameworks */,
+				70AA605C16462B7500B4746B /* QuartzCore.framework in Frameworks */,
+				70D880C1162B901100A19EBD /* UIKit.framework in Frameworks */,
+				70D880C3162B901100A19EBD /* Foundation.framework in Frameworks */,
+				70D880C5162B901100A19EBD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709A5383164FE5C40069041C /* Algorithms and Structures */ = {
+			isa = PBXGroup;
+			children = (
+				70D8810F162E5A8700A19EBD /* PuzzleSolvers */,
+				70D8810E162E5A6F00A19EBD /* Dictionary */,
+			);
+			name = "Algorithms and Structures";
+			sourceTree = "<group>";
+		};
+		709A5384164FE5EA0069041C /* View and View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D880D2162B901100A19EBD /* MainStoryboard.storyboard */,
+				700B4A55163EC755009AA525 /* AJBHomeViewController.h */,
+				700B4A56163EC756009AA525 /* AJBHomeViewController.m */,
+				70E76A5A16490E05009A36B9 /* Custom Dictonary Editor */,
+				70E76A5B16490E2E009A36B9 /* Puzzle Solvers */,
+			);
+			name = "View and View Controllers";
+			sourceTree = "<group>";
+		};
+		709A5385164FE6260069041C /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				70D880CF162B901100A19EBD /* AJBAppDelegate.h */,
+				70D880D0162B901100A19EBD /* AJBAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		709A5386164FE6810069041C /* Imported Files */ = {
+			isa = PBXGroup;
+			children = (
+				70CEA335164FCC6E001EFDB3 /* Images */,
+				701E04BE164AA99B003EA1DE /* Wordlist.txt */,
+			);
+			name = "Imported Files";
+			sourceTree = "<group>";
+		};
+		709A5387164FE69B0069041C /* Built In Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D880C8162B901100A19EBD /* MPSolver-Info.plist */,
+				70D880C9162B901100A19EBD /* InfoPlist.strings */,
+				70D880CC162B901100A19EBD /* main.m */,
+				70D880CE162B901100A19EBD /* MPSolver-Prefix.pch */,
+			);
+			name = "Built In Supporting Files";
+			sourceTree = "<group>";
+		};
+		709A539B165477FA0069041C /* Anagrams */ = {
+			isa = PBXGroup;
+			children = (
+				70D880F8162E5A4F00A19EBD /* AJBAnagram.h */,
+				70D880F9162E5A4F00A19EBD /* AJBAnagram.m */,
+			);
+			name = Anagrams;
+			sourceTree = "<group>";
+		};
+		709A539C165478040069041C /* Boggle */ = {
+			isa = PBXGroup;
+			children = (
+				70D880FA162E5A4F00A19EBD /* AJBBoggle.h */,
+				70D880FB162E5A4F00A19EBD /* AJBBoggle.m */,
+			);
+			name = Boggle;
+			sourceTree = "<group>";
+		};
+		709A539D1654780E0069041C /* Crossword */ = {
+			isa = PBXGroup;
+			children = (
+				70D880FC162E5A4F00A19EBD /* AJBCrossword.h */,
+				70D880FD162E5A4F00A19EBD /* AJBCrossword.m */,
+			);
+			name = Crossword;
+			sourceTree = "<group>";
+		};
+		709A539E165478170069041C /* Hangman */ = {
+			isa = PBXGroup;
+			children = (
+				70D88100162E5A4F00A19EBD /* AJBHangman.h */,
+				70D88101162E5A4F00A19EBD /* AJBHangman.m */,
+			);
+			name = Hangman;
+			sourceTree = "<group>";
+		};
+		709A539F165478220069041C /* Scrabble */ = {
+			isa = PBXGroup;
+			children = (
+				70D88102162E5A4F00A19EBD /* AJBScrabble.h */,
+				70D88103162E5A4F00A19EBD /* AJBScrabble.m */,
+			);
+			name = Scrabble;
+			sourceTree = "<group>";
+		};
+		709A53A01654783A0069041C /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				70D88104162E5A4F00A19EBD /* AJBWord.h */,
+				70D88105162E5A4F00A19EBD /* AJBWord.m */,
+			);
+			name = Word;
+			sourceTree = "<group>";
+		};
+		70CEA335164FCC6E001EFDB3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				70CEA346164FD125001EFDB3 /* Loading Images */,
+				70CEA347164FD146001EFDB3 /* Buttons And Cells */,
+				70CEA348164FD184001EFDB3 /* Backgrounds */,
+				70CEA349164FD1C5001EFDB3 /* Icons */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		70CEA346164FD125001EFDB3 /* Loading Images */ = {
+			isa = PBXGroup;
+			children = (
+				708E15D116553981004B8903 /* Default@2x.png */,
+				7030E29A165541540095904B /* Default-568h@2x.png */,
+				7030E281165540760095904B /* circularPuzzleImage.png */,
+			);
+			name = "Loading Images";
+			sourceTree = "<group>";
+		};
+		70CEA347164FD146001EFDB3 /* Buttons And Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7030E296165540EA0095904B /* glossyRedButtonImage.png */,
+				7030E289165540760095904B /* wideBrightWoodButtonImage.png */,
+				7030E27F165540760095904B /* bigRedCellImage.png */,
+			);
+			name = "Buttons And Cells";
+			sourceTree = "<group>";
+		};
+		70CEA348164FD184001EFDB3 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				7030E297165540EA0095904B /* woodenPlanksBackgroundImage.jpg */,
+				7030E280165540760095904B /* brightWoodenPlankImage.png */,
+				7030E282165540760095904B /* darkWoodenPlankImage.png */,
+				7030E283165540760095904B /* plainPaperBackgroundImage.png */,
+				7030E284165540760095904B /* puzzleBackgroundImage.png */,
+				7030E285165540760095904B /* puzzlePiecesBackgroundImage.png */,
+				7030E286165540760095904B /* puzzlePiecesBackgroundImage@2x.png */,
+				7030E287165540760095904B /* sunBackgroundImage.png */,
+				7030E288165540760095904B /* sunBackgroundImage@2x.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		70CEA349164FD1C5001EFDB3 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				70D9249A165555A90044B7DB /* icon@2x.png */,
+				70D92498165555A20044B7DB /* icon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		70CEA34A164FD25B001EFDB3 /* Easter Egg */ = {
+			isa = PBXGroup;
+			children = (
+				7030E29C165541980095904B /* everybodyWalkTheDinosaur.aif */,
+			);
+			name = "Easter Egg";
+			sourceTree = "<group>";
+		};
+		70D880B1162B901100A19EBD = {
+			isa = PBXGroup;
+			children = (
+				70D880C6162B901100A19EBD /* MPSolver */,
+				70D880BF162B901100A19EBD /* Imported Frameworks */,
+				70D880BD162B901100A19EBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70D880BD162B901100A19EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D880BC162B901100A19EBD /* MPSolver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D880BF162B901100A19EBD /* Imported Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7025D396164F6AB500DAD2F0 /* AudioToolbox.framework */,
+				70973F3316469A4600571D10 /* CoreData.framework */,
+				70AA605B16462B7500B4746B /* QuartzCore.framework */,
+				70D880C0162B901100A19EBD /* UIKit.framework */,
+				70D880C2162B901100A19EBD /* Foundation.framework */,
+				70D880C4162B901100A19EBD /* CoreGraphics.framework */,
+			);
+			name = "Imported Frameworks";
+			sourceTree = "<group>";
+		};
+		70D880C6162B901100A19EBD /* MPSolver */ = {
+			isa = PBXGroup;
+			children = (
+				709A5385164FE6260069041C /* App Delegate */,
+				709A5383164FE5C40069041C /* Algorithms and Structures */,
+				709A5384164FE5EA0069041C /* View and View Controllers */,
+				70D880C7162B901100A19EBD /* Supporting Files */,
+			);
+			name = MPSolver;
+			path = PuzzleSolverApp;
+			sourceTree = "<group>";
+		};
+		70D880C7162B901100A19EBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				709A5386164FE6810069041C /* Imported Files */,
+				709A5387164FE69B0069041C /* Built In Supporting Files */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D8810E162E5A6F00A19EBD /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				70D880FE162E5A4F00A19EBD /* AJBDictionary.h */,
+				70D880FF162E5A4F00A19EBD /* AJBDictionary.m */,
+				709A53A01654783A0069041C /* Word */,
+			);
+			name = Dictionary;
+			sourceTree = "<group>";
+		};
+		70D8810F162E5A8700A19EBD /* PuzzleSolvers */ = {
+			isa = PBXGroup;
+			children = (
+				709A539B165477FA0069041C /* Anagrams */,
+				709A539C165478040069041C /* Boggle */,
+				709A539D1654780E0069041C /* Crossword */,
+				709A539E165478170069041C /* Hangman */,
+				709A539F165478220069041C /* Scrabble */,
+				70D88106162E5A4F00A19EBD /* PuzzleSolvers.h */,
+			);
+			name = PuzzleSolvers;
+			sourceTree = "<group>";
+		};
+		70E76A5A16490E05009A36B9 /* Custom Dictonary Editor */ = {
+			isa = PBXGroup;
+			children = (
+				70E76A6116490EEB009A36B9 /* Word Storage */,
+				700B4A6D163F497B009AA525 /* AJBCustomDictionaryViewController.h */,
+				700B4A6E163F497C009AA525 /* AJBCustomDictionaryViewController.m */,
+				7068F6FD164915950051F0F6 /* AJBCustomDictionaryDetailViewController.h */,
+				7068F6FE164915950051F0F6 /* AJBCustomDictionaryDetailViewController.m */,
+			);
+			name = "Custom Dictonary Editor";
+			sourceTree = "<group>";
+		};
+		70E76A5B16490E2E009A36B9 /* Puzzle Solvers */ = {
+			isa = PBXGroup;
+			children = (
+				700B4A66163ED0C7009AA525 /* AJBPuzzleSolversViewController.h */,
+				700B4A67163ED0C7009AA525 /* AJBPuzzleSolversViewController.m */,
+				70E76A5C16490E4F009A36B9 /* Anagram Solver */,
+				70E76A5D16490E5C009A36B9 /* Boggle Solver */,
+				70E76A5E16490E68009A36B9 /* Crossword Solver */,
+				70E76A5F16490E78009A36B9 /* Hangman Solver */,
+				70E76A6016490E87009A36B9 /* Scrabble Solver */,
+				70D880ED162E589900A19EBD /* AJBSolutionsViewController.h */,
+				70D880EE162E589900A19EBD /* AJBSolutionsViewController.m */,
+				70CEA32F164FCA75001EFDB3 /* AJBPuzzleHelpViewController.h */,
+				70CEA330164FCA75001EFDB3 /* AJBPuzzleHelpViewController.m */,
+			);
+			name = "Puzzle Solvers";
+			sourceTree = "<group>";
+		};
+		70E76A5C16490E4F009A36B9 /* Anagram Solver */ = {
+			isa = PBXGroup;
+			children = (
+				70D880E9162E551200A19EBD /* AJBAnagramSolverViewController.h */,
+				70D880EA162E551200A19EBD /* AJBAnagramSolverViewController.m */,
+			);
+			name = "Anagram Solver";
+			sourceTree = "<group>";
+		};
+		70E76A5D16490E5C009A36B9 /* Boggle Solver */ = {
+			isa = PBXGroup;
+			children = (
+				700B4A63163ED0A4009AA525 /* AJBBoggleSolverViewController.h */,
+				700B4A64163ED0A4009AA525 /* AJBBoggleSolverViewController.m */,
+			);
+			name = "Boggle Solver";
+			sourceTree = "<group>";
+		};
+		70E76A5E16490E68009A36B9 /* Crossword Solver */ = {
+			isa = PBXGroup;
+			children = (
+				70BCB30C16363A2900A9DFB0 /* AJBCrosswordSolverViewController.h */,
+				70BCB30D16363A2900A9DFB0 /* AJBCrosswordSolverViewController.m */,
+				70CEA34A164FD25B001EFDB3 /* Easter Egg */,
+			);
+			name = "Crossword Solver";
+			sourceTree = "<group>";
+		};
+		70E76A5F16490E78009A36B9 /* Hangman Solver */ = {
+			isa = PBXGroup;
+			children = (
+				70BCB3101637B55700A9DFB0 /* AJBHangmanSolverViewController.h */,
+				70BCB3111637B55700A9DFB0 /* AJBHangmanSolverViewController.m */,
+			);
+			name = "Hangman Solver";
+			sourceTree = "<group>";
+		};
+		70E76A6016490E87009A36B9 /* Scrabble Solver */ = {
+			isa = PBXGroup;
+			children = (
+				700B4A51163EA18F009AA525 /* AJBScrabbleSolverViewController.h */,
+				700B4A52163EA18F009AA525 /* AJBScrabbleSolverViewController.m */,
+			);
+			name = "Scrabble Solver";
+			sourceTree = "<group>";
+		};
+		70E76A6116490EEB009A36B9 /* Word Storage */ = {
+			isa = PBXGroup;
+			children = (
+				70973F7A16476D8B00571D10 /* PuzzleSolverApp.xcdatamodeld */,
+				70E76A52164894E9009A36B9 /* AJBDiskStoredWord.h */,
+				70E76A53164894E9009A36B9 /* AJBDiskStoredWord.m */,
+			);
+			name = "Word Storage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D880BB162B901100A19EBD /* MPSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D880DA162B901100A19EBD /* Build configuration list for PBXNativeTarget "MPSolver" */;
+			buildPhases = (
+				70D880B8162B901100A19EBD /* Sources */,
+				70D880B9162B901100A19EBD /* Frameworks */,
+				70D880BA162B901100A19EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPSolver;
+			productName = PuzzleSolverApp;
+			productReference = 70D880BC162B901100A19EBD /* MPSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D880B3162B901100A19EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AJB;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Alastair Barnett";
+			};
+			buildConfigurationList = 70D880B6162B901100A19EBD /* Build configuration list for PBXProject "MPSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70D880B1162B901100A19EBD;
+			productRefGroup = 70D880BD162B901100A19EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D880BB162B901100A19EBD /* MPSolver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D880BA162B901100A19EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D880CB162B901100A19EBD /* InfoPlist.strings in Resources */,
+				70D880D4162B901100A19EBD /* MainStoryboard.storyboard in Resources */,
+				701E04BF164AA99B003EA1DE /* Wordlist.txt in Resources */,
+				708E15CF16553981004B8903 /* Default@2x.png in Resources */,
+				7030E28A165540760095904B /* bigRedCellImage.png in Resources */,
+				7030E28B165540760095904B /* brightWoodenPlankImage.png in Resources */,
+				7030E28C165540760095904B /* circularPuzzleImage.png in Resources */,
+				7030E28D165540760095904B /* darkWoodenPlankImage.png in Resources */,
+				7030E28E165540760095904B /* plainPaperBackgroundImage.png in Resources */,
+				7030E28F165540760095904B /* puzzleBackgroundImage.png in Resources */,
+				7030E290165540760095904B /* puzzlePiecesBackgroundImage.png in Resources */,
+				7030E291165540760095904B /* puzzlePiecesBackgroundImage@2x.png in Resources */,
+				7030E292165540760095904B /* sunBackgroundImage.png in Resources */,
+				7030E293165540760095904B /* sunBackgroundImage@2x.png in Resources */,
+				7030E294165540760095904B /* wideBrightWoodButtonImage.png in Resources */,
+				7030E298165540EA0095904B /* glossyRedButtonImage.png in Resources */,
+				7030E299165540EA0095904B /* woodenPlanksBackgroundImage.jpg in Resources */,
+				7030E29B165541540095904B /* Default-568h@2x.png in Resources */,
+				7030E29D165541980095904B /* everybodyWalkTheDinosaur.aif in Resources */,
+				70D92499165555A20044B7DB /* icon.png in Resources */,
+				70D9249B165555A90044B7DB /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D880B8162B901100A19EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D880CD162B901100A19EBD /* main.m in Sources */,
+				70D880D1162B901100A19EBD /* AJBAppDelegate.m in Sources */,
+				70D880EB162E551200A19EBD /* AJBAnagramSolverViewController.m in Sources */,
+				70D880EF162E589900A19EBD /* AJBSolutionsViewController.m in Sources */,
+				70D88107162E5A4F00A19EBD /* AJBAnagram.m in Sources */,
+				70D88108162E5A4F00A19EBD /* AJBBoggle.m in Sources */,
+				70D88109162E5A4F00A19EBD /* AJBCrossword.m in Sources */,
+				70D8810A162E5A4F00A19EBD /* AJBDictionary.m in Sources */,
+				70D8810B162E5A4F00A19EBD /* AJBHangman.m in Sources */,
+				70D8810C162E5A4F00A19EBD /* AJBScrabble.m in Sources */,
+				70D8810D162E5A4F00A19EBD /* AJBWord.m in Sources */,
+				70BCB30E16363A2900A9DFB0 /* AJBCrosswordSolverViewController.m in Sources */,
+				70BCB3121637B55700A9DFB0 /* AJBHangmanSolverViewController.m in Sources */,
+				700B4A53163EA18F009AA525 /* AJBScrabbleSolverViewController.m in Sources */,
+				700B4A57163EC756009AA525 /* AJBHomeViewController.m in Sources */,
+				700B4A65163ED0A4009AA525 /* AJBBoggleSolverViewController.m in Sources */,
+				700B4A68163ED0C7009AA525 /* AJBPuzzleSolversViewController.m in Sources */,
+				700B4A6F163F497D009AA525 /* AJBCustomDictionaryViewController.m in Sources */,
+				70973F7C16476D8C00571D10 /* PuzzleSolverApp.xcdatamodeld in Sources */,
+				70E76A54164894E9009A36B9 /* AJBDiskStoredWord.m in Sources */,
+				7068F6FF164915950051F0F6 /* AJBCustomDictionaryDetailViewController.m in Sources */,
+				70CEA331164FCA75001EFDB3 /* AJBPuzzleHelpViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		708E15D116553981004B8903 /* Default@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708E15D016553981004B8903 /* en */,
+			);
+			name = "Default@2x.png";
+			sourceTree = SOURCE_ROOT;
+		};
+		70D880C9162B901100A19EBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D880CA162B901100A19EBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		70D880D2162B901100A19EBD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D880D3162B901100A19EBD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D880D8162B901100A19EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70D880D9162B901100A19EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70D880DB162B901100A19EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ali Barnett (JHN584W96M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ali Barnett (JHN584W96M)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleSolverApp/MPSolver-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleSolverApp/MPSolver-Info.plist";
+				PRODUCT_NAME = MPSolver;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		70D880DC162B901100A19EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ali Barnett (JHN584W96M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ali Barnett (JHN584W96M)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PuzzleSolverApp/MPSolver-Prefix.pch";
+				INFOPLIST_FILE = "PuzzleSolverApp/MPSolver-Info.plist";
+				PRODUCT_NAME = MPSolver;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D880B6162B901100A19EBD /* Build configuration list for PBXProject "MPSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D880D8162B901100A19EBD /* Debug */,
+				70D880D9162B901100A19EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D880DA162B901100A19EBD /* Build configuration list for PBXNativeTarget "MPSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D880DB162B901100A19EBD /* Debug */,
+				70D880DC162B901100A19EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70973F7A16476D8B00571D10 /* PuzzleSolverApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70973F7B16476D8C00571D10 /* PuzzleSolverApp.xcdatamodel */,
+			);
+			currentVersion = 70973F7B16476D8C00571D10 /* PuzzleSolverApp.xcdatamodel */;
+			path = PuzzleSolverApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 70D880B3162B901100A19EBD /* Project object */;
+}

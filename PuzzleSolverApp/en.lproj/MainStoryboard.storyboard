@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ZRa-7Q-ghe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller - Home-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="AJBHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="puzzlePiecesBackgroundImage.png" id="efK-X1-KkO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="afZ-IV-Hgq">
+                                <rect key="frame" x="65" y="312.5" width="190" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <state key="normal" title="Solve Puzzle" backgroundImage="glossyRedButtonImage.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Onu-Ok-7EP" kind="push" identifier="homeToPuzzleSolverMenuSegue" id="gsn-Eo-7Ac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="exq-9p-kaE">
+                                <rect key="frame" x="66" y="390" width="188" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Edit Custom Dictionary" backgroundImage="glossyRedButtonImage.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7A4-qg-OYQ" kind="push" identifier="homeToCustomDictionarySegue" id="vBV-wb-a9M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="xb5-Of-VLM" propertyAccessControl="none"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="195"/>
+        </scene>
+        <!--Puzzle Solvers View Controller - Puzzle Solvers-->
+        <scene sceneID="LiH-6d-Bqt">
+            <objects>
+                <tableViewController id="Onu-Ok-7EP" customClass="AJBPuzzleSolversViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KIJ-kV-Le9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="Fdl-qu-LLG">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="oTx-hn-iP4" style="IBUITableViewCellStyleDefault" id="R15-9K-7AI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Anagram Solver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oTx-hn-iP4">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="ybh-C5-95f" kind="push" identifier="puzzleSolversToAnagramSolver" id="RMR-Ov-rDi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="0rb-p8-Oy2" style="IBUITableViewCellStyleDefault" id="77w-bu-UUk">
+                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Boggle Solver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0rb-p8-Oy2">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="XIc-NU-h5w" kind="push" identifier="puzzleSolversToBoggleSolver" id="zfb-QK-XOH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="4Qx-RH-n4e" style="IBUITableViewCellStyleDefault" id="cJh-Zu-o4A">
+                                        <rect key="frame" x="0.0" y="88" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Crossword Solver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Qx-RH-n4e">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="6vl-Jo-vKh" kind="push" identifier="puzzleSolversToCrosswordSolver" id="3bi-x0-VDV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tOm-O0-14z" style="IBUITableViewCellStyleDefault" id="S2V-ql-mMS">
+                                        <rect key="frame" x="0.0" y="132" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Hangman Solver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tOm-O0-14z">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="SyG-1i-FNb" kind="push" identifier="puzzleSolversToHangmanSolver" id="ZJt-Vk-OFd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ao8-s4-jAW" style="IBUITableViewCellStyleDefault" id="LYS-Kn-yCp">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Scrabble Solver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ao8-s4-jAW">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="xzT-uY-zFq" kind="push" identifier="puzzleSolversToScrabbleSolver" id="NB0-oJ-Ipx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Onu-Ok-7EP" id="WWg-hK-jTe"/>
+                            <outlet property="delegate" destination="Onu-Ok-7EP" id="6UN-oE-2mz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Puzzle Solvers" id="vJ9-to-68i"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utb-op-jap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-769"/>
+        </scene>
+        <!--Boggle Solver View Controller - Boggle-->
+        <scene sceneID="yD4-0W-9BU">
+            <objects>
+                <viewController id="XIc-NU-h5w" customClass="AJBBoggleSolverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8gB-N5-ka6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sunBackgroundImage.png" id="UMU-Es-GBW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cT8-lp-1jA">
+                                <rect key="frame" x="204" y="20" width="96" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Solve" backgroundImage="glossyRedButtonImage.png">
+                                    <color key="titleColor" red="0.97254908080000002" green="0.98823535439999999" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="segueShouldOccur:" destination="XIc-NU-h5w" eventType="touchUpInside" id="APb-bS-Q9U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lyv-KO-uRc">
+                                <rect key="frame" x="204" y="75" width="96" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Clear" backgroundImage="glossyRedButtonImage.png">
+                                    <color key="titleColor" red="0.97254908080000002" green="0.98823535439999999" blue="0.011764707040000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="XIc-NU-h5w" eventType="touchUpInside" id="PaQ-Om-C9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boggle" id="QEL-do-QNC">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="NZT-pa-zX1">
+                            <color key="tintColor" red="0.86938298359999999" green="0.2279311131" blue="0.16794023720000001" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="lnx-PK-FQh" kind="push" identifier="boggleHelpSegue" id="C6z-HY-w17"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="Lyv-KO-uRc" id="yFY-hs-1o0"/>
+                        <outlet property="solveButton" destination="cT8-lp-1jA" id="QaX-ga-4Qt"/>
+                        <segue destination="YRl-j4-qUh" kind="push" identifier="solveBoggleSegue" id="sqK-Sj-hXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlB-Qu-CJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-1410"/>
+        </scene>
+        <!--Crossword Solver View Controller - Crossword-->
+        <scene sceneID="PQF-e0-ydH">
+            <objects>
+                <viewController id="6vl-Jo-vKh" customClass="AJBCrosswordSolverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bud-8H-ZCo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="D6f-xj-pFh">
+                                <rect key="frame" x="23" y="143.5" width="85" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title=" ¹ Clear  ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="6vl-Jo-vKh" eventType="touchUpInside" id="mBe-Ai-Hx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="YSr-Rb-fEF">
+                                <rect key="frame" x="212" y="144" width="85" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title=" ² Solve   ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YRl-j4-qUh" kind="push" identifier="solveCrosswordSegue" id="vtD-Wk-2Zd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crossword" id="MGS-QI-ELc">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="Hcy-si-fXR">
+                            <color key="tintColor" red="0.86938298359999999" green="0.2279311131" blue="0.16794023720000001" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="lnx-PK-FQh" kind="push" identifier="crosswordHelpSegue" id="3fB-XP-aAN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="D6f-xj-pFh" id="m5c-8d-CEb"/>
+                        <outlet property="solveButton" destination="YSr-Rb-fEF" id="YdR-Pq-VnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smK-Yv-grJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-769"/>
+        </scene>
+        <!--Hangman Solver View Controller - Hangman-->
+        <scene sceneID="SQs-2L-yjG">
+            <objects>
+                <viewController id="SyG-1i-FNb" customClass="AJBHangmanSolverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBt-Op-Gt4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="woodenPlanksBackgroundImage.jpg" id="w26-8g-t7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="340"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="darkWoodenPlankImage.png" id="ibo-Iy-bqM">
+                                <rect key="frame" x="0.0" y="95" width="320" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter failed guesses" textAlignment="center" minimumFontSize="17" background="WoodPlanksBare0150_7_thumbhuge.jpg" id="VTa-2r-J8b">
+                                <rect key="frame" x="85" y="158" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="letterFieldEdited:" destination="SyG-1i-FNb" eventType="editingChanged" id="mXV-7Q-oIO"/>
+                                    <action selector="returnKeyWasPressed:" destination="SyG-1i-FNb" eventType="editingDidEndOnExit" id="mLa-QA-nQq"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Unused" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="AXp-GA-Rev">
+                                <rect key="frame" x="16" y="163" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tne-sw-S59">
+                                <rect key="frame" x="242" y="107" width="72" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Words" backgroundImage="wideBrightWoodButtonImage.png">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YRl-j4-qUh" kind="push" identifier="solveHangmanSegue" id="VBL-Go-gSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sdt-7R-6gx">
+                                <rect key="frame" x="78" y="107" width="80" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Guess" backgroundImage="wideBrightWoodButtonImage.png">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.30196079611778259" green="0.364705890417099" blue="0.074509806931018829" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findGuessButtonPressed:" destination="SyG-1i-FNb" eventType="touchUpInside" id="ucd-GM-Icz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="NrC-Oh-2SN">
+                                <rect key="frame" x="160" y="109" width="74" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pHI-tI-iQp">
+                                <rect key="frame" x="8" y="107" width="65" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Clear" backgroundImage="wideBrightWoodButtonImage.png">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="SyG-1i-FNb" eventType="touchUpInside" id="woi-2L-lCm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hangman" id="pas-uV-rpm">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="YEt-bh-gUh">
+                            <color key="tintColor" red="0.86938298359999999" green="0.2279311131" blue="0.16794023720000001" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="lnx-PK-FQh" kind="push" identifier="hangmanHelpSegue" id="Deq-Cg-fKx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="pHI-tI-iQp" id="ZIR-21-fSR"/>
+                        <outlet property="findGuessButton" destination="Sdt-7R-6gx" id="VWL-fa-xHW"/>
+                        <outlet property="guessLabel" destination="NrC-Oh-2SN" id="F2R-JU-EAz"/>
+                        <outlet property="guessedLettersField" destination="VTa-2r-J8b" id="rWr-N5-typ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xw1-gk-blr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-141"/>
+        </scene>
+        <!--Scrabble Solver View Controller - Scrabble-->
+        <scene sceneID="eau-6y-D5X">
+            <objects>
+                <viewController id="xzT-uY-zFq" customClass="AJBScrabbleSolverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGM-Ru-gwx">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KRo-LK-TJ2">
+                                <rect key="frame" x="204" y="100" width="96" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Solve" backgroundImage="wideBrightWoodButtonImage.png">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YRl-j4-qUh" kind="push" identifier="solveScrabbleSegue" id="LuA-8H-mDP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pti-Aq-vwR">
+                                <rect key="frame" x="20" y="100" width="96" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Clear" backgroundImage="wideBrightWoodButtonImage.png">
+                                    <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="xzT-uY-zFq" eventType="touchUpInside" id="N6h-qr-Pdw"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="brightWoodenPlankImage.png" id="9wb-7t-qy5">
+                                <rect key="frame" x="0.0" y="143" width="320" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431377187371254" green="0.60784316062927246" blue="0.57647061347961426" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scrabble" id="dzG-Gd-r9k">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="Ks4-MT-dru">
+                            <color key="tintColor" red="0.86938298359999999" green="0.2279311131" blue="0.16794023720000001" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="lnx-PK-FQh" kind="push" identifier="scrabbleHelpSegue" id="8a4-Jd-uPs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="clearButton" destination="pti-Aq-vwR" id="GvA-ap-BQO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ou-ee-NrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="529"/>
+        </scene>
+        <!--Anagram Solver View Controller - Anagram-->
+        <scene sceneID="8Ay-Hs-bXX">
+            <objects>
+                <viewController id="ybh-C5-95f" customClass="AJBAnagramSolverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fxa-iw-Sb7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="puzzleBackgroundImage.png" id="A9F-Wo-45M">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter an anagram" minimumFontSize="17" clearButtonMode="always" id="4oM-7R-gv6">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="returnKeyWasPressed:" destination="ybh-C5-95f" eventType="editingDidEndOnExit" id="qmj-0k-1Pj"/>
+                                    <action selector="textFieldEdited:" destination="ybh-C5-95f" eventType="editingChanged" id="Jbk-Pg-Keg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VwC-Z0-YMP">
+                                <rect key="frame" x="59" y="66" width="203" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Find Anagrams">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YRl-j4-qUh" kind="push" identifier="solveAnagramSegue" id="W3Y-BF-5ZX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anagram" id="S6z-Ud-0l1">
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="Roe-2R-CkF">
+                            <color key="tintColor" red="0.86938298359999999" green="0.2279311131" blue="0.16794023720000001" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <segue destination="lnx-PK-FQh" kind="push" identifier="anagramHelpSegue" id="kty-ix-qSf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="anagramSolverButton" destination="VwC-Z0-YMP" id="SLa-IM-d1p"/>
+                        <outlet property="anagramSolverTextBox" destination="4oM-7R-gv6" id="RX5-Ye-rRV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dp4-G1-av2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-2037"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9WX-vs-GUd">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ZRa-7Q-ghe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b25-dr-OhU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="vGP-g8-lQ2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgY-fg-KAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="195"/>
+        </scene>
+        <!--Custom Dictionary View Controller - Custom Words-->
+        <scene sceneID="gyw-j8-qtO">
+            <objects>
+                <tableViewController id="7A4-qg-OYQ" customClass="AJBCustomDictionaryViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ucl-RC-rwd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="IfZ-Fq-MQ8" detailTextLabel="BTY-LA-Ybh" style="IBUITableViewCellStyleSubtitle" id="x9K-bS-VdP">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IfZ-Fq-MQ8">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BTY-LA-Ybh">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="caf-5Z-q6h" kind="push" identifier="editWord" id="UF1-PL-vcS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7A4-qg-OYQ" id="iYt-T2-dLj"/>
+                            <outlet property="delegate" destination="7A4-qg-OYQ" id="zcv-6Q-9rx"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Custom Words" id="zJj-YW-Twb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wfn-5Z-X3w">
+                            <connections>
+                                <segue destination="caf-5Z-q6h" kind="push" identifier="newWord" id="YZJ-zz-Th6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="wfn-5Z-X3w" id="xFL-vK-laq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AtK-7S-pJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="1243"/>
+        </scene>
+        <!--Custom Dictionary Detail View Controller - Edit Word-->
+        <scene sceneID="PPx-Ow-J7Z">
+            <objects>
+                <viewController id="caf-5Z-q6h" customClass="AJBCustomDictionaryDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cXP-FS-Qkz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="plainPaperBackgroundImage.png" id="2Kh-dy-jJP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the new word" minimumFontSize="17" clearButtonMode="always" id="iO4-0Q-QCl">
+                                <rect key="frame" x="20" y="49" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="dataWasChanged:" destination="caf-5Z-q6h" eventType="editingChanged" id="uQH-Er-FL9"/>
+                                    <action selector="returnKeyWasPressedForWord:" destination="caf-5Z-q6h" eventType="editingDidEndOnExit" id="9MY-sg-Iob"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the definition (optional)" minimumFontSize="17" id="8Bh-9j-D8O">
+                                <rect key="frame" x="20" y="116" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dataWasChanged:" destination="caf-5Z-q6h" eventType="editingChanged" id="HJG-45-Fpi"/>
+                                    <action selector="returnKeyWasPressedForDefinition:" destination="caf-5Z-q6h" eventType="editingDidEndOnExit" id="FmB-Ay-Ype"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="epk-Tx-9fG">
+                                <rect key="frame" x="20" y="20" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Defintion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M9c-GO-dkJ">
+                                <rect key="frame" x="20" y="87" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Word" id="H6a-MP-MDG"/>
+                    <connections>
+                        <outlet property="definitionTextField" destination="8Bh-9j-D8O" id="Hu7-aO-lMb"/>
+                        <outlet property="wordTextField" destination="iO4-0Q-QCl" id="Lfg-XO-vG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUD-Kf-3s6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="1243"/>
+        </scene>
+        <!--Puzzle Help View Controller - Help-->
+        <scene sceneID="WTQ-cU-TeV">
+            <objects>
+                <viewController title="Help" id="lnx-PK-FQh" customClass="AJBPuzzleHelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZbC-2i-2E2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="plainPaperBackgroundImage.png" id="66F-5w-2LM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="XGe-DJ-b2i">
+                                <rect key="frame" x="20" y="18" width="280" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="Lj8-gL-a00"/>
+                    <connections>
+                        <outlet property="informationTextView" destination="XGe-DJ-b2i" id="4Ju-Qf-WI3"/>
+                        <outlet property="navigationBar" destination="Lj8-gL-a00" id="4ex-Es-ssD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ey-ut-9VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2619" y="-937"/>
+        </scene>
+        <!--Solutions View Controller - Solutions-->
+        <scene sceneID="rZh-7Y-fXS">
+            <objects>
+                <tableViewController id="YRl-j4-qUh" customClass="AJBSolutionsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="47u-mt-v90">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="QVH-kv-sfB" style="IBUITableViewCellStyleDefault" id="ukc-lj-6GY">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QVH-kv-sfB">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.96862751250000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YRl-j4-qUh" id="nco-Qi-nb9"/>
+                            <outlet property="delegate" destination="YRl-j4-qUh" id="4Ha-A2-9NK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Solutions" id="nIr-9d-yYa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyH-sa-EAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2619" y="-323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WoodPlanksBare0150_7_thumbhuge.jpg" width="16" height="16"/>
+        <image name="brightWoodenPlankImage.png" width="320" height="61"/>
+        <image name="darkWoodenPlankImage.png" width="320" height="61"/>
+        <image name="glossyRedButtonImage.png" width="300" height="96"/>
+        <image name="plainPaperBackgroundImage.png" width="320" height="420"/>
+        <image name="puzzleBackgroundImage.png" width="320" height="210"/>
+        <image name="puzzlePiecesBackgroundImage.png" width="320" height="480"/>
+        <image name="sunBackgroundImage.png" width="320" height="418"/>
+        <image name="wideBrightWoodButtonImage.png" width="208" height="61"/>
+        <image name="woodenPlanksBackgroundImage.jpg" width="340" height="340"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YZJ-zz-Th6"/>
+        <segue reference="Deq-Cg-fKx"/>
+        <segue reference="VBL-Go-gSP"/>
+    </inferredMetricsTieBreakers>
+</document>
